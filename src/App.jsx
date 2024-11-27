@@ -56,7 +56,6 @@ export default function App() {
     }));
   };
 
-  // Form submit handling
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -64,7 +63,6 @@ export default function App() {
       return;
     }
 
-    // Add the new data to the submittedData array
     setSubmittedData((prevData) => [...prevData, formValues]);
 
     // Reset form values after submission
@@ -183,7 +181,6 @@ export default function App() {
         </form>
       </div>
 
-      {/* Display all submitted data as new cards */}
       <div className="mt-10">
         {submittedData.map((data, index) => (
           <div key={index} className="mt-4 p-4 bg-white shadow-md rounded-lg">
